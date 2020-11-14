@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   initializer.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ocathern <ocathern@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/14 17:33:17 by ocathern          #+#    #+#             */
+/*   Updated: 2020/11/14 17:36:11 by ocathern         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "filler.h"
 
 static t_board	*init_plateau(void)
@@ -14,7 +26,7 @@ static t_board	*init_plateau(void)
 	return (board);
 }
 
-static t_shape		*init_piece(void)
+static t_shape	*init_piece(void)
 {
 	t_shape		*shape;
 
@@ -28,7 +40,7 @@ static t_shape		*init_piece(void)
 	return (shape);
 }
 
-t_filler			*init_filler(void)
+t_filler		*init_filler(void)
 {
 	t_filler	*filler;
 	t_board		*board;
@@ -49,7 +61,7 @@ t_filler			*init_filler(void)
 	return (filler);
 }
 
-int					init_players(t_filler *filler, char *line)
+int				init_players(t_filler *filler, char *line)
 {
 	while (get_next_line(0, &line) > 0)
 	{

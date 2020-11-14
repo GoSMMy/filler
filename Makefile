@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ocathern <ocathern@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/11/14 17:34:08 by ocathern          #+#    #+#              #
+#    Updated: 2020/11/14 17:34:11 by ocathern         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = ocathern.filler
 SRCDIR = ./src/
 SRCNAMES = $(shell ls $(SRCDIR) | grep -E ".+\.c")
@@ -12,8 +24,6 @@ LIBINC = ./include/libft/
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-# CFLAGS = -Wall -Wextra
-
 
 DEBUG = -g
 
